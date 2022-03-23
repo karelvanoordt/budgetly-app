@@ -1,7 +1,7 @@
 class ExpensesController < ApplicationController
   def new
     @user = User.where(user_id: current_user.id)
-    @group = Group.find(params[:group_params])
+    @group = Group.find(params[:group_id])
     @expense = Expense.new
   end
 
