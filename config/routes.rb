@@ -10,4 +10,10 @@ Rails.application.routes.draw do
  end
 
  root 'groups#index'
+
+#  resources :users
+
+#  resources :groups, only %i[index show new create destroy] do
+#   resources :expenses, only %i[new show create destroy]
+#  end
 end
