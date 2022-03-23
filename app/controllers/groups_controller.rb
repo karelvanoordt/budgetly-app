@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = current_user.group.create(group_params)
+    @group = current_user.groups.create(group_params)
     if @group.save
       flash[:notice] = 'Category created succesfully'
       redirect_to root_path
@@ -36,6 +36,6 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:name)
+    params.require(:group).permit(:name, :icon)
   end
 end
