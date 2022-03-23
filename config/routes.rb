@@ -5,20 +5,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  authenticated :user do
-    root 'groups#index', as: :authenticated_root
-  end
+ devise_scope :user do
+  get '/users/sign_out' => 'devise/sessions#destroy'
+ end
 
-  unauthenticated :user do
-    root to: 'users#index'
-  end
-
-  devise_scope :user do
-    get '/users/sign_out' => 'devise/sessions/#destroy'
-  end
-
-  resources :users, only: [:index]
-  resources :groups, only: %i[index show new create destroy] do
-    resources :expenses, only: %i[index show new create destroy]
-  end
+ root 'groups#index'
 end
