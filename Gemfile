@@ -36,6 +36,9 @@ gem "jbuilder"
 # Use bootstrap for styling
 gem 'bootstrap'
 
+# Use cancancan for authorization
+gem 'cancancan'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
