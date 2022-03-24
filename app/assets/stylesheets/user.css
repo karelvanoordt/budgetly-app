@@ -1,39 +1,39 @@
 
 .index-body {
-    align-items: center;
+  align-items: center;
 }
 
 .splash-logo {
-    font-family: 'Satisfy';
-    font-size: 3rem;
-    text-align: center;
-    padding: 3rem;
+  font-family: 'Satisfy', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem;
 }
 
 .user-sign-cont {
-    padding-bottom: 2rem;
-    position: absolute;
-    bottom: 0;
-    width: 60%;
-    margin: auto;
+  padding-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  margin: auto;
 }
 
 .sign-btn {
-    border: 0 transparent;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+  border: 0 transparent;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 .sign-b {
-    background-color: #3778c2;
+  background-color: #3778c2;
 }
 
 .sign-btn-link {
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
+  color: grey;
 }
 
 .sign-btn-link-b {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
