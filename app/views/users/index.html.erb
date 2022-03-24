@@ -1,10 +1,10 @@
-<div class='user-index-page'>
-    <div class='app-logo'>
-        <h2 class='budgetly-logo'>Budgetly</h2>
-    </div>
+<div class='index-body d-flex flex-column'>
+<h2 class='splash-logo'>Budgetly</h2>
 
-    <div class='sign-links d-flex flex-column justify-content-center'>
-        <%= link_to 'Sign in', new_user_session_path %>
-        <%= link_to 'Sign up', new_user_registration_path %>
-    </div>
+
+
+<div class='user-sign-cont d-flex flex-column'>
+        <button class='sign-btn sign-b'><%= link_to 'Sign in', new_user_session_path, class: 'sign-btn-link-b' %></button>
+        <button class='sign-btn'><%= link_to 'Sign up', new_user_registration_path, class: 'sign-btn-link' %></button>
+</div>
 </div>

@@ -1,8 +1,18 @@
-<nav class='page-nav'>
-  <h3 class='page-title'>Sign Up</h3>
-</nav>
-
+  <nav class='bdtly-navbar'>
+    <div class='nav-els-cont d-flex justify-content-between align'>
+      <div class='arrow-cont'>
+        <a><i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class='current-page-cont'>
+        <h1 class='current-page'>SIGN UP</h1>
+      </div>
+      <div class='login-perm-link-cont'>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.submit "Sign up", class: 'login-perm-link'%>
+      </div>
+    </div>
+  </nav>
+
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
@@ -22,9 +32,6 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm password', class:'b-field' %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up", class: 'log-btn' %>
-  </div>
 <% end %>
 
 <div class= 'action-links'>

@@ -1,19 +1,29 @@
-<h1>Group Index Page</h1>
+  <nav class='bdtly-navbar'>
+    <div class='nav-els-cont d-flex justify-content-between align'>
+      <div class='arrow-cont'>
+        <a><i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class='current-page-cont'>
+        <h1 class='current-page'>CATEGORIES</h1>
+      </div>
+      <div class='login-perm-link-cont'>
+            <%= render 'layouts/navbar', class: 'login-perm-link'%>
+      </div>
+    </div>
+  </nav>
+
 
 <% if @groups.any? %>
 <% @groups.each do |group| %>
 
-<div class='group-card'>
-
-
-    <div class='g-card-row-1 d-flex'>
+    <div class='g-card-cont'>
         <div class='g-card-col-1'>
             <%= image_tag "#{group.icon}", class:'g-card-img' %>
         </div>
 
         <div class='g-card-col-2 d-flex flex-column'>
             <p><%= link_to group.name, group_path(group), class: 'g-card-name' %></p>
-            <%# <p><%= group.created_at.strftime, class: 'g-card-date' %></p> %>
+            <%# <p><%= group.created_at.strftime, class: 'g-card-date' %></p>
         </div>
 
         <div class='g-card-col-3'>
@@ -21,13 +31,6 @@
         </div>
     </div>
 
-    <%# <% if can? :destroy, group %>
-    <%# <div class='g-card-row-2'>
-        <%= button_to 'Delete', group_path(group.id), method: :delete, class:'delete-btn' %>
-    <%# </div>
-    <% end %> %> %> %>
-
-</div>
 
 <% end %>
 
@@ -36,5 +39,5 @@
 <% end %>
 
 <div class='create-g-btn'>
-    <%= link_to 'Create New Category', new_group_path %>
+    <%= link_to 'Create New Category', new_group_path, class: 'create-cat-btn' %>
 </div>

@@ -1,56 +1,53 @@
 @import 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import './user.css';
+@import './group.css';
 
 body {
-  background-color: rgba(225, 225, 225, 0.884) !important;
+  background-color: rgba(238, 237, 237, 0.884) !important;
 }
 
-.navbar {
-  background-color: #3778c2;
-  margin-bottom: -4.2rem;
-}
-
-.nav-logout {
-  color: white;
-  text-decoration: none;
-}
-
-.page-nav {
+.bdtly-navbar {
   background-color: #3778c2;
   color: white;
-  justify-items: center;
-  padding-bottom: 0.5rem;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 0.6rem 0.4rem 0.6rem 0.4rem;
 }
 
-.page-title {
-  text-align: center;
-  font-size: 18px;
+.nav-els-cont {
+  align-items: baseline;
+}
+
+.logout-link {
+  border: 0 transparent;
+}
+
+.login-perm-link {
+  border: 0 transparent;
+  background-color: transparent;
+  color: white;
 }
 
 .b-field {
+  border: 0 transparent;
+  margin-bottom: 0.2rem;
   width: 100%;
   height: 3rem;
-  margin-top: 0.5rem;
-  border: transparent;
-}
-
-.actions {
-  text-align: center;
-  margin: 2rem;
-}
-
-.log-btn {
-  border: 0 transparent;
-  background-color: #5fb523;
-  color: white;
-  padding: 0.2rem 1rem 0.2rem 1rem;
 }
 
 .action-links {
+  margin-top: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.1rem;
 }
 
 .b-signup,
 .b-forgot,
 .b-login {
   text-decoration: none;
+  color: grey;
 }
