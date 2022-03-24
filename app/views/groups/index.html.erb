@@ -1,4 +1,10 @@
-<h1>Group Index Page</h1>
+
+<nav class='navbar'>
+  <div>
+    <%=link_to 'Budgetly', root_path, class: ''%>
+    <%= render 'layouts/navbar'%>
+  </div>
+</nav>
 
 <% if @groups.any? %>
 <% @groups.each do |group| %>
