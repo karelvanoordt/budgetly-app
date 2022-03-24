@@ -1,55 +1,56 @@
- @import 'bootstrap';
+@import 'bootstrap';
 
- body {
-    background-color: rgba(225, 225, 225, 0.884) !important;
-  }
+body {
+  background-color: rgba(225, 225, 225, 0.884) !important;
+}
 
- .navbar {
-     background-color: #3778c2;
-     margin-bottom: -4.2rem;
- }
+.navbar {
+  background-color: #3778c2;
+  margin-bottom: -4.2rem;
+}
 
- .nav-logout {
-     color: white;
-     text-decoration: none
- }
+.nav-logout {
+  color: white;
+  text-decoration: none;
+}
 
 .page-nav {
-    background-color: #3778c2;
-    color:white;
-    justify-items: center;
-    padding-bottom: 0.5rem
-
+  background-color: #3778c2;
+  color: white;
+  justify-items: center;
+  padding-bottom: 0.5rem;
 }
 
 .page-title {
-    text-align: center;
-    font-size: 18px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .b-field {
-    width: 100%;
-    height: 3rem;
-    margin-top: 0.5rem;
-    border: transparent
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5rem;
+  border: transparent;
 }
 
 .actions {
-    text-align: center;
-    margin: 2rem
+  text-align: center;
+  margin: 2rem;
 }
 
 .log-btn {
-    border: 0px transparent;
-    background-color: #5fb523;
-    color: white;
-    padding: 0.2rem 1rem 0.2rem 1rem;
+  border: 0 transparent;
+  background-color: #5fb523;
+  color: white;
+  padding: 0.2rem 1rem 0.2rem 1rem;
 }
 
 .action-links {
-    text-align: center;
+  text-align: center;
 }
 
-.b-signup, .b-forgot, .b-login  {
-    text-decoration: none
+.b-signup,
+.b-forgot,
+.b-login {
+  text-decoration: none;
 }
