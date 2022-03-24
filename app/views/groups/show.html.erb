@@ -1,0 +1,49 @@
+<h1>Category Details Page</h1>
+
+<div class='group-details-header'>
+
+
+    <div class=''>
+        <div class=''>
+            <%= image_tag "#{@group.icon}", class:'' %>
+        </div>
+
+        <div class=''>
+            <p><%= link_to @group.name, class: '' %></p>
+            <%# <p><%= group.created_at.strftime, class: 'g-card-date' %></p> %>
+        </div>
+
+        <div class=''>
+            <p>Total: $<%= @group.expenses.sum(:amount) %> </p>
+        </div>
+    </div>
+
+</div>
+
+    <% if @group.expenses.any? %>
+      <div class='g-details-cont'>
+        <% @group.expenses.order(created_at: 'DESC').each do |expense| %>
+
+            <div class='exp-card'>
+                <div class='exp-card-col-1'>
+                    <p><%= expense.name %></p>
+                    <p>Created at: <%= expense.created_at.strftime("%Y-%b-%d") %></p>
+                </div>
+
+                <div class='exp-card-col-2'>
+                    <p>Amount: $<%= expense.amount %></p>
+                </div>
+            
+            </div>
+        <% end %>
+
+      </div>
+
+    <% else %>
+        <p>No transaction was made in this category</p>
+    <% end %>
+
+    <div>
+        <%= link_to 'Add expense', new_group_expense_path(@group)  %>
+    </div>
+

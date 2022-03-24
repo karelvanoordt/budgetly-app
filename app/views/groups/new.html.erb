@@ -1,0 +1,15 @@
+<%= form_with model: @group, class:""  do |f|%>
+
+
+
+<h3 class="">Create New Category</h3>
+
+<div class='new-g-form'>
+    <%= f.text_field :name,  required: true,  class: 'new-g-form-field', placeholder: "Category Name", id:'name'%><br>
+
+    <%= f.text_field :icon, required: true, class: 'new-g-form-field', placeholder: "Enter image link"%>
+
+    <%= f.submit "Create Category", class: 'new-g-form-btn' %>
+</div>
+
+<%end%>
