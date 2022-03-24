@@ -1,21 +1,30 @@
-<h1>Category Details Page</h1>
+  <nav class='bdtly-navbar'>
+    <div class='nav-els-cont d-flex justify-content-between align'>
+      <div class='arrow-cont'>
+        <a><i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div class='current-page-cont'>
+        <h1 class='current-page'>DETAILS</h1>
+      </div>
+      <div class='login-perm-link-cont'>
+            <%= render 'layouts/navbar', class: 'login-perm-link'%>
+      </div>
+    </div>
+  </nav>
+
 
 <div class='group-details-header'>
 
 
-    <div class=''>
-        <div class=''>
-            <%= image_tag "#{@group.icon}", class:'' %>
+    <div class='g-details-cols'>
+        <div class='det-col-1'>
+            <%= image_tag "#{@group.icon}", class:'g-card-img' %>
         </div>
 
-        <div class=''>
-            <p><%= link_to @group.name, class: '' %></p>
-            <%# <p><%= group.created_at.strftime, class: 'g-card-date' %></p> %>
+        <div class='det-col-2'>
+            <p class='group-name-head'><%= link_to @group.name, class: 'group-name-link' %></p>
         </div>
 
-        <div class=''>
-            <p>Total: $<%= @group.expenses.sum(:amount) %> </p>
-        </div>
     </div>
 
 </div>
@@ -24,14 +33,14 @@
       <div class='g-details-cont'>
         <% @group.expenses.order(created_at: 'DESC').each do |expense| %>
 
-            <div class='exp-card'>
+            <div class='exp-card d-flex'>
                 <div class='exp-card-col-1'>
-                    <p><%= expense.name %></p>
-                    <p>Created at: <%= expense.created_at.strftime("%Y-%b-%d") %></p>
+                    <p class='expense-name'><%= expense.name %></p>
+                    <p class='created_at'>Created at: <%= expense.created_at.strftime("%Y-%b-%d") %></p>
                 </div>
 
                 <div class='exp-card-col-2'>
-                    <p>Amount: $<%= expense.amount %></p>
+                    <p class='expense-amount'>Amount: $<%= expense.amount %></p>
                 </div>
             
             </div>
@@ -43,7 +52,11 @@
         <p>No transaction was made in this category</p>
     <% end %>
 
-    <div>
-        <%= link_to 'Add expense', new_group_expense_path(@group)  %>
+    <div class='total-cont'>
+      <p class='expense-total-amount'>Total Expenses: $<%= @group.expenses.sum(:amount) %> </p>
+    </div>
+
+    <div class='create-g-exp-btn'>
+        <%= link_to 'Add expense', new_group_expense_path(@group), class: 'create-exp-btn'  %>
     </div>
 
