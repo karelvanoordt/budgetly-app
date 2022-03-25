@@ -1,0 +1,100 @@
+.g-card-cont {
+  background-color: white;
+  margin-bottom: 0.2rem;
+  padding: 0 0.4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.g-card-img {
+  width: 100px;
+  padding: 0.2rem;
+}
+
+.g-card-name {
+  text-decoration: none;
+  color: black;
+}
+
+.group-name-head {
+  text-decoration: none;
+}
+
+.group-name-link {
+  text-decoration: none;
+  color: black;
+}
+
+.create-g-btn {
+  text-align: center;
+}
+
+.create-cat-btn {
+  border: 0 transparent;
+  background-color: #5fb523;
+  padding: 0.4rem;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-left: -4.5rem;
+  margin-bottom: 3rem;
+}
+
+.group-details-header {
+  background-color: white;
+}
+
+.g-details-cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 2rem;
+}
+
+.g-details-cont {
+  margin-top: 1rem;
+}
+
+.exp-card {
+  background-color: white;
+  margin-bottom: 0.1rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.expense-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.created_at {
+  font-size: 12px;
+}
+
+.total-cont {
+  background-color: white;
+  font-weight: bold;
+  height: 3rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+.create-g-exp-btn {
+  text-align: center;
+  margin-right: 3.5rem;
+}
+
+.create-exp-btn {
+  border: 0 transparent;
+  background-color: #5fb523;
+  padding: 0.4rem;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: 7rem;
+}

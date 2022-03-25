@@ -1,0 +1,30 @@
+  <nav class='bdtly-navbar'>
+    <div class='nav-els-cont d-flex justify-content-between align'>
+      <div class='arrow-cont'>
+        <a href="/"><i class="fa fa-arrow-left arrow-link" ></i></a>
+      </div>
+      <div class='current-page-cont'>
+        <h1 class='current-page'>CREATE CATEGORY</h1>
+      </div>
+      <div class='login-perm-link-cont'>
+            <%= render 'layouts/navbar', class: 'login-perm-link'%>
+      </div>
+    </div>
+  </nav>
+
+
+<%= form_with model: @group, class:""  do |f|%>
+
+
+
+<div class='new-g-form'>
+    <%= f.text_field :name,  required: true,  class: 'b-field', placeholder: "Category Name", id:'name'%><br>
+
+    <%= f.text_field :icon, required: true, class: 'b-field', placeholder: "Enter image link"%>
+
+    <div class='create-g-btn'>
+     <%= f.submit "Create Category", class: 'create-cat-btn' %>
+    </div>
+</div>
+
+<%end%>
