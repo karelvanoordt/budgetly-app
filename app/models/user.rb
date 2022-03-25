@@ -5,8 +5,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :groups, dependent: :destroy
-  has_many :expenses, dependent: :destroy
+  after_create :set_role
+  validates :name, presence: true
+  validates :email, presence: true
+
+  has_many :groups
+  has_many :expenses
 
   def set_role
     update(role: 'user')

@@ -1,4 +1,4 @@
-@import 'bootstrap';
+/* @import 'bootstrap'; */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import './user.css';
 @import './group.css';
@@ -22,6 +22,11 @@ body {
 
 .logout-link {
   border: 0 transparent;
+}
+
+.arrow-link {
+  text-decoration: none;
+  color: white;
 }
 
 .login-perm-link {

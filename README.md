@@ -1,25 +1,47 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Budgetly App
 
-Things you may want to cover:
+> A web application that track your personal expenses and helps you categorize them.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+## Built With
 
-* Database creation
+- HTML & CSS
+- Ruby on Rails
+- Rubocop
+- Rspec
+- OOP
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+- copy this link `https://github.com/karelvanoordt/budgetly-app.git`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/karelvanoordt/budgetly-app.git`.
+- go to the repository folder in your command prompt.
+- run `bundle install`.
+- run `npm install`
+- create database in your postgre called `recipe_development`
+- run `rails db:migrate`
+- To run the test run `rspec` in your command prompt.
+- To run the rails server run  `rails s` in your command prompt.
 
-* ...
+## Author
+
+
+👤 **Karel van Oordt**
+
+- GitHub: [@karelvanoordt](https://github.com/karelvanoordt)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/karelvanoordt/)
+
+
+**Aknowledgment**
+
+- Big thanks to [Gregoire Vella](https://www.behance.net/gregoirevella) for providing the design guidelines for this project.
+
 
