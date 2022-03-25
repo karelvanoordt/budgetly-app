@@ -1,13 +1,15 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <nav class='bdtly-navbar'>
     <div class='nav-els-cont d-flex justify-content-between align'>
       <div class='arrow-cont'>
-        <a><i class="fa fa-arrow-left"></i></a>
+        <a href="/"><i class="fa fa-arrow-left", ></i></a>
+
+        
       </div>
       <div class='current-page-cont'>
         <h1 class='current-page'>LOGIN</h1>
       </div>
       <div class='login-perm-link-cont'>
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <%= f.submit "Log in", class: 'login-perm-link' %>
       </div>
     </div>

@@ -1,3 +1,4 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <nav class='bdtly-navbar'>
     <div class='nav-els-cont d-flex justify-content-between align'>
       <div class='arrow-cont'>
@@ -7,7 +8,6 @@
         <h1 class='current-page'>SIGN UP</h1>
       </div>
       <div class='login-perm-link-cont'>
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.submit "Sign up", class: 'login-perm-link'%>
       </div>
     </div>
@@ -16,20 +16,20 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.text_field :name, placeholder: 'Full Name', class:'b-field' %>
+    <%= f.text_field :name, placeholder: 'Full Name', class:'b-field', required: 'true' %>
   </div>
 
   <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class:'b-field' %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class:'b-field', required: 'true' %>
   </div>
 
   <div class="field">
 
-    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class:'b-field' %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class:'b-field', required: 'true' %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm password', class:'b-field' %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm password', class:'b-field', required: 'true' %>
   </div>
 
 <% end %>
