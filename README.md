@@ -40,7 +40,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-
 👤 **Karel van Oordt**
 
 - GitHub: [@karelvanoordt](https://github.com/karelvanoordt)
