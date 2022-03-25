@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/karelvanoordt/)
 
 
-**Aknowledgment**
+**Acknowledgment**
 
 - Big thanks to [Gregoire Vella](https://www.behance.net/gregoirevella) for providing the design guidelines for this project.
 
