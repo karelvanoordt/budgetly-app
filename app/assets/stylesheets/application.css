@@ -24,6 +24,11 @@ body {
   border: 0 transparent;
 }
 
+.arrow-link {
+    text-decoration: none;
+    color: white;
+}
+
 .login-perm-link {
   border: 0 transparent;
   background-color: transparent;
