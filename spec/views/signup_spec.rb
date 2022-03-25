@@ -8,7 +8,7 @@ RSpec.describe 'User index page', type: :feature do
 
     it 'can enter a name and receive a greeting' do
       visit new_user_registration_path
-      expect(page).to have_content 'Sign up'
+      expect(page).to have_content 'SIGN UP'
     end
 
     it 'click the login error' do
@@ -16,9 +16,9 @@ RSpec.describe 'User index page', type: :feature do
       expect(page).to have_content "Email can't be blank"
     end
 
-    it ' I can not sign up without user name user details' do
+    it 'validates if signup fails when leaving a field empty' do
       fill_in 'Full Name', with: ''
-      fill_in 'Email', with: 'user@gmail.com'
+      fill_in 'Email', with: 'karel@gmail.com'
       fill_in 'Password', with: '123456'
       fill_in 'Confirm password', with: '123456'
       click_button 'Sign up'
