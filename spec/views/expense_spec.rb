@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe 'Group expenses page', type: :feature do
