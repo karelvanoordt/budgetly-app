@@ -35,6 +35,9 @@ To get a local copy up and running follow these simple example steps.
 
 [Click here to check the live demo](https://desolate-peak-95618.herokuapp.com/)
 
+## Loom Video Presentation
+[Click here to watch the demo presentation](https://www.loom.com/share/23dc43c44bb445778e636a0c295f34e9)
+
 ## Author
 
 
