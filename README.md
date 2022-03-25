@@ -31,6 +31,10 @@ To get a local copy up and running follow these simple example steps.
 - To run the test run `rspec` in your command prompt.
 - To run the rails server run  `rails s` in your command prompt.
 
+## Live Demo
+
+[Click here to check the live demo](https://desolate-peak-95618.herokuapp.com/)
+
 ## Author
 
 
